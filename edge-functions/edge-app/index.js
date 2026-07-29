@@ -15,9 +15,7 @@ export default async function onRequest(context) {
     JSON.stringify({
       message: "Hello from Edge Functions!",
       visitCount: count,
-      timestamp: new Date().toISOString(),
-      API_TOKEN: process.env.PAGES_BLOB_DEPLOY_CREDENTIAL,
-      PROJECT_ID: process.env.PAGES_PROJECT_ID
+      timestamp: new Date().toISOString()
     }),
     {
       headers: { "Content-Type": "application/json" },
