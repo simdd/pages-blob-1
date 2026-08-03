@@ -1,7 +1,7 @@
 {
   "name": "pages-blob-example",
   "version": "1.0.0",
-  "description": "Example project demonstrating @tencent/pages-blob-test usage with Edge Functions and Cloud Functions on EdgeOne Pages",
+  "description": "Example project demonstrating pages-blob-test usage with Edge Functions and Cloud Functions on EdgeOne Pages",
   "type": "module",
   "license": "MIT",
   "keywords": [
@@ -14,6 +14,6 @@
     "example"
   ],
   "dependencies": {
-    "@tencent/pages-blob-test": "latest"
+    "pages-blob-test": "latest"
   }
 }

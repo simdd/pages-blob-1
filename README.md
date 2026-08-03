@@ -1,6 +1,6 @@
-# @tencent/pages-blob-test Example
+# pages-blob-test Example
 
-A complete EdgeOne Pages project demonstrating `@tencent/pages-blob-test` usage. Includes both **Edge Functions** and **Cloud Functions (Node.js)** runtimes, differentiated by subdirectory path routing.
+A complete EdgeOne Pages project demonstrating `pages-blob-test` usage. Includes both **Edge Functions** and **Cloud Functions (Node.js)** runtimes, differentiated by subdirectory path routing.
 
 ## Deploy
 

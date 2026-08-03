@@ -2,7 +2,7 @@
  * Edge Function: edge-app homepage
  * Route: /edge-app
  */
-import { getStore } from "@tencent/pages-blob-test";
+import { getStore } from "pages-blob-test";
 
 export default async function onRequest(context) {
   const store = getStore("functions-test");

@@ -1,6 +1,6 @@
-# @tencent/pages-blob-test 示例项目
+# pages-blob-test 示例项目
 
-用于演示 `@tencent/pages-blob-test` 用法的完整 EdgeOne Pages 项目。同时包含 **Edge Functions** 和 **Cloud Functions (Node.js)** 两种运行时，通过子目录路径区分访问。
+用于演示 `pages-blob-test` 用法的完整 EdgeOne Pages 项目。同时包含 **Edge Functions** 和 **Cloud Functions (Node.js)** 两种运行时，通过子目录路径区分访问。
 
 ## 部署
 

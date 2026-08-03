@@ -2,7 +2,7 @@
  * Edge Function: Catch-all route
  * Handles all /edge-app/api/* requests, including user CRUD and 404 fallback
  */
-import { getStore } from "@tencent/pages-blob-test";
+import { getStore } from "pages-blob-test";
 
 const store = getStore("functions-test");
 const USERS_KEY = "edge-app/data/users.json";
