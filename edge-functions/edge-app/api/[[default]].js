@@ -4,7 +4,6 @@
  */
 import { getStore } from "pages-blob-test";
 
-process.env.PAGES_BLOB_STS_ENV = 'test';
 const store = getStore("functions-test");
 const USERS_KEY = "edge-app/data/users.json";
 

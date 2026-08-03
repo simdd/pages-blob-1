@@ -5,7 +5,6 @@
 import { getStore } from "pages-blob-test";
 
 export default async function onRequest(context) {
-  process.env.PAGES_BLOB_STS_ENV = 'test';
   const store = getStore("functions-test");
 
   const info = {
