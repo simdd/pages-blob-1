@@ -2,7 +2,7 @@
  * Node Function: Catch-all route
  * Handles all /node-app/api/* requests, including user CRUD (with prefix filter, PUT) and 404 fallback
  */
-import { getStore } from "@edgeone/pages-blob";
+import { getStore } from "@tencent/pages-blob-test";
 
 const store = getStore("functions-test");
 const USERS_KEY = "node-app/data/users.json";

@@ -2,7 +2,7 @@
  * Node Function: node-app homepage
  * Route: /node-app
  */
-import { getStore } from "@edgeone/pages-blob";
+import { getStore } from "@tencent/pages-blob-test";
 
 export default async function onRequest(context) {
   const store = getStore("functions-test");
