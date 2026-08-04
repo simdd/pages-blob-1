@@ -22,6 +22,7 @@ export default async function onRequest(context) {
       message: "Hello from Node.js Cloud Functions!",
       requestId: context.uuid,
       visitor: info,
+      xCubeOuterFluxRestricted: context.request.headers.get("x-cube-outer-flux-restricted"),
     }),
     {
       headers: { "Content-Type": "application/json" },
