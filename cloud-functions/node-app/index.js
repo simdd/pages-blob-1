@@ -17,15 +17,13 @@ export default async function onRequest(context) {
 
   await store.setJSON("node-app/last-visit.json", info);
 
-  return new Response(
-    JSON.stringify({
-      message: "Hello from Node.js Cloud Functions!",
-      requestId: context.uuid,
-      visitor: info,
-      xCubeOuterFluxRestricted: context.request.headers.get("x-cube-outer-flux-restricted"),
-    }),
-    {
-      headers: { "Content-Type": "application/json" },
-    }
-  );
+  const res = await fetch("https://static.cloudcachetci.com/qcloud/main/scripts/release/common/vendors/jquery-3.2.1.min.js");
+
+  return new Response(res.body, {
+    status: res.status,
+    headers: {
+      "Content-Type": res.headers.get("Content-Type") || "application/javascript",
+      "x-cube-outer-flux-restricted": context.request.headers.get("x-cube-outer-flux-restricted") || "",
+    },
+  });
 }
